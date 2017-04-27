@@ -3,3 +3,4 @@ node_modules/
 npm-debug.log
 *.vsix
 index.js
+theme.json
