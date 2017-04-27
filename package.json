@@ -13,17 +13,16 @@
         "vscode": "^1.0.0"
     },
     "scripts": {
-        "start": "scripts/start",
-        "push": "scripts/push",
-        "lint": "scripts/lint",
-        "build": "scripts/build"
-    },
-    "devDependencies": {
-        "eslint": "3.5.0",
-        "watch": "0.19.2"
+        "prestart": "tsc index.ts",
+        "start": "node index.js"
     },
     "dependencies": {
-        "nova-colors": "1.2.0"
+        "nova-colors": "2.1.5"
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.10",
+        "typescript": "^2.2.1",
+        "vscode-theme-generator": "*"
     },
     "categories": [
         "Themes"
@@ -40,7 +39,7 @@
             {
                 "label": "Nova",
                 "uiTheme": "vs-dark",
-                "path": "./themes/nova.tmTheme"
+                "path": "./theme.json"
             }
         ]
     }
